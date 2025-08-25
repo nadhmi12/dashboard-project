@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1dc96c2f73.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 67 41"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M45.0353 4.66312C45.8331 3.77669 46.7195 3.04539 47.6281 2.46921C49.2236 1.47198 50.9079 0.940125 52.6364 0.940125V15.411C51.3732 11.0232 48.6475 7.25591 45.0353 4.66312ZM66.5533 40.9401H15.2957C6.87461 40.9401 0.0712891 34.1146 0.0712891 25.7157C0.0712891 17.6714 6.3206 11.0675 14.232 10.5135V0.940125C16.0048 0.940125 17.7555 1.44982 19.3954 2.46921C20.304 3.02323 21.1904 3.75453 21.9882 4.59663C25.2458 2.31409 29.1904 0.984446 33.4674 0.984446C33.4674 10.2254 30.1433 20.9734 19.3289 20.9955H33.3566C32.9577 19.2005 31.3178 17.8709 29.3677 17.8487H37.5228C35.5727 17.8487 33.9328 19.2005 33.5339 21.0177H46.6087C49.2236 21.0177 51.8164 21.5274 54.2541 22.5468C56.6696 23.544 58.8857 25.0288 60.725 26.8681C62.5865 28.7296 64.0491 30.9235 65.0464 33.339C66.0436 35.7324 66.5533 38.3252 66.5533 40.9401ZM22.8525 10.7795C23.1849 11.6437 24.0713 12.6188 25.3123 13.3279C26.5533 14.0371 27.8386 14.3252 28.7472 14.1922C28.4148 13.3279 27.5284 12.3529 26.2874 11.6437C25.0464 10.9346 23.761 10.6465 22.8525 10.7795ZM41.5117 13.3279C40.2707 14.0371 38.9854 14.3252 38.0768 14.1922C38.4092 13.3279 39.2957 12.3529 40.5367 11.6437C41.7777 10.9346 43.063 10.6465 43.9716 10.7795C43.6613 11.6437 42.7527 12.6188 41.5117 13.3279Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <h1>Dashboard</h1>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-address-card"></i>Profile</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-message"></i>Messages</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-clock-rotate-left"></i>History</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-note-sticky"></i>Tasks</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-user-group"></i>Communities</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-circle-question"></i>Support</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-shield-halved"></i>Privacy</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <header class="header">
+        <div class="header-search">
+          <div class="search-bar">
+            <button class="icon-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="search" placeholder="Search..." />
+          </div>
+        </div>
+
+        <div class="header-avatar-right">
+          <button class="notification">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <img class="avatar" src="/images/angel.jpg" alt="User avatar" />
+          <div class="user-meta">Luca Ambrosino</div>
+        </div>
+
+        <div class="header-user">
+          <img class="avatar" src="images/angel.jpg" alt="User avatar" />
+          <div class="user-meta">
+            <p class="hi">Hi there,</p>
+            <p class="name">Luca Ambrosino (@luca)</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="project-display">
+          <div class="project-section-heading">Your projects</div>
+          <div class="project-container">
+            <div class="project">
+              <div class="project-text">
+                <div class="project-heading">Super cool project</div>
+                <div class="project-description">
+                  Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
+                  nostrud exercitation.
+                </div>
+                <div class="project-actions-container">
+                  <ul>
+                    <li>
+                      <button
+                        class="project-actions-btn"
+                        aria-label="Add to favorites"
+                      >
+                        <i class="fa-solid fa-star"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-actions-btn"
+                        aria-label="View project"
+                      >
+                        <i class="fa-solid fa-eye"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-actions-btn"
+                        aria-label="Share project"
+                      >
+                        <i class="fa-solid fa-share-nodes"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-text">
+                <div class="project-heading">Less cool project</div>
+                <div class="project-description">
+                  Lorem Ipsum laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="project-actions-container">
+                  <ul>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="Add to favorites"
+                      >
+                        <i class="fa-solid fa-star"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="View project"
+                      >
+                        <i class="fa-solid fa-eye"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="Share project"
+                      >
+                        <i class="fa-solid fa-share-nodes"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-text">
+                <div class="project-heading">Impossible app</div>
+                <div class="project-description">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.
+                </div>
+                <div class="project-actions-container">
+                  <ul>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="Add to favorites"
+                      >
+                        <i class="fa-solid fa-star"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="View project"
+                      >
+                        <i class="fa-solid fa-eye"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="Share project"
+                      >
+                        <i class="fa-solid fa-share-nodes"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-text">
+                <div class="project-heading">Easy Peasy App</div>
+                <div class="project-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <div class="project-actions-container">
+                  <ul>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="Add to favorites"
+                      >
+                        <i class="fa-solid fa-star"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="View project"
+                      >
+                        <i class="fa-solid fa-eye"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="Share project"
+                      >
+                        <i class="fa-solid fa-share-nodes"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-text">
+                <div class="project-heading">Ad Blocker</div>
+                <div class="project-description">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="project-actions-container">
+                  <ul>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="Add to favorites"
+                      >
+                        <i class="fa-solid fa-star"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="View project"
+                      >
+                        <i class="fa-solid fa-eye"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="Share project"
+                      >
+                        <i class="fa-solid fa-share-nodes"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-text">
+                <div class="project-heading">Money Maker</div>
+                <div class="project-description">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="project-actions-container">
+                  <ul>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="Add to favorites"
+                      >
+                        <i class="fa-solid fa-star"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="View project"
+                      >
+                        <i class="fa-solid fa-eye"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="project-action-btn"
+                        aria-label="Share project"
+                      >
+                        <i class="fa-solid fa-share-nodes"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="announcement-section">
+          <div class="announcement-section-heading">Announcements</div>
+          <div class="announcement-container">
+            <div class="announcement-heading">Site maintenance</div>
+            <div class="announcement-description">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </div>
+            <hr />
+            <div class="announcement-heading">Community Share Day</div>
+            <div class="announcement-description">
+              Ut enim ad minim veniam, quis nostrud exercitation.
+            </div>
+            <hr />
+            <div class="announcement-heading">Updated Privacy Policy</div>
+            <div class="announcement-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+            </div>
+          </div>
+        </div>
+
+        <div class="trending-section">
+          <div class="trending-section-heading">Trending</div>
+          <div class="trending-container">
+            <div class="trending-profile">
+              <div><img class="propic-small" src="images/vince.jpg" /></div>
+              <div class="trending-profile-info">
+                <div class="trending-username">@tegan</div>
+                <div class="trending-project">World peace builder</div>
+              </div>
+            </div>
+            <div class="trending-profile">
+              <div><img class="propic-small" src="images/maria.jpg" /></div>
+              <div class="trending-profile-info">
+                <div class="trending-username">@johnwest</div>
+                <div class="trending-project">Super cool project</div>
+              </div>
+            </div>
+            <div class="trending-profile">
+              <div><img class="propic-small" src="images/debra.jpg" /></div>
+              <div class="trending-profile-info">
+                <div class="trending-username">@kendall</div>
+                <div class="trending-project">Life changing app</div>
+              </div>
+            </div>
+            <div class="trending-profile">
+              <div><img class="propic-small" src="images/doakes.jpg" /></div>
+              <div class="trending-profile-info">
+                <div class="trending-username">@alex</div>
+                <div class="trending-project">No traffic maker</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
